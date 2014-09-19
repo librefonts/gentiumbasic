@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Build Log</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<style type="text/css">
+  .popover {
+    max-width: 1980px;
+    font-family: Courier,serif;
+}
+
+.footer {
+  color: #bbb;
+  text-align: center;
+  font-size: smaller;
+  padding: 0 0;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer:hover {
+  color: #444;
+}
+
+.footer a {
+  color: #add8e6;
+}
+
+.footer:hover a {
+  color: #0088cc;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: #777;
+}
+.footer-links {
+  margin: 10px 0;
+}
+.footer-links li {
+  list-style: none;
+  line-height: 1.2em;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+</style>
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  
+  
+
+
+<ul class="nav nav-tabs">
+    <li><a href="https://github.com/fontdirectory/gentiumbasic/tree/gh-pages" target="_blank"><i class="fa fa-github"></i> gh-pages</a></li>
+    <li><a href="https://github.com/fontdirectory/gentiumbasic" target="_blank"><i class="fa fa-github-square"></i> Github Page</a></li>
+    <li><a href="index.html">Summary</a></li>
+    <li>
+        
+        <a href="review.html">Review</a>
+        
+    </li>
+    <li><a href="checks.html">Pre-Build Checks</a></li>
+    <li><a href="tests.html">Tests</a></li>
+    <li class="active"><a href="buildlog.html">Build Log</a></li>
+    <li><a href="metadata.html">METADATA.json</a></li>
+    <li><a href="bakery-yaml.html">bakery.yaml</a></li>
+    <li><a href="description.html">Description</a></li>
+  </ul>
+
+  <pre><h1>Bake Begins!</h1>
+<h3>(1 of 6) Copy sources</h3>
+<p>$ cp -a /home/travis/build/fontdirectory/gentiumbasic/METADATA.json /home/travis/build/fontdirectory/gentiumbasic/builds/build
+$ cp -a /home/travis/build/fontdirectory/gentiumbasic/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/gentiumbasic/builds/build
+$ cp -a /home/travis/build/fontdirectory/gentiumbasic/FONTLOG.txt /home/travis/build/fontdirectory/gentiumbasic/builds/build
+$ cp -a GenBasB.ttf.ttx GenBasBI.ttf.ttx GenBasI.ttf.ttx GenBasR.ttf.ttx GenBasB.ttf.S<strong>i_l_f.ttx GenBasB.ttf.<em>g_a_s_p.ttx GenBasB.ttf._f_p_g_m.ttx GenBasB.ttf.O_S_2f_2.ttx GenBasB.ttf._c_m_a_p.ttx GenBasB.ttf._p_o_s_t.ttx GenBasB.ttf.G_P_O_S</em>.ttx GenBasB.ttf._h_e_a_d.ttx GenBasB.ttf.GlyphOrder.ttx GenBasB.ttf._g_l_y_f.ttx GenBasB.ttf._h_m_t_x.ttx GenBasB.ttf.S</strong>i_l_l.ttx GenBasB.ttf.<em>l_o_c_a.ttx GenBasB.ttf._c_v_t.ttx GenBasB.ttf._n_a_m_e.ttx GenBasB.ttf._h_h_e_a.ttx GenBasB.ttf.G<strong>l_a_t.ttx GenBasB.ttf.F</strong>e_a_t.ttx GenBasB.ttf.G<strong>l_o_c.ttx GenBasB.ttf.<em>m_a_x_p.ttx GenBasB.ttf.G_D_E_F</em>.ttx GenBasB.ttf.G_S_U_B_.ttx GenBasB.ttf.<em>p_r_e_p.ttx GenBasBI.ttf.G_P_O_S</em>.ttx GenBasBI.ttf._h_m_t_x.ttx GenBasBI.ttf.S</strong>i_l_f.ttx GenBasBI.ttf._m_a_x_p.ttx GenBasBI.ttf.S<strong>i_l_l.ttx GenBasBI.ttf.<em>p_o_s_t.ttx GenBasBI.ttf.GlyphOrder.ttx GenBasBI.ttf._c_v_t.ttx GenBasBI.ttf._h_h_e_a.ttx GenBasBI.ttf._g_l_y_f.ttx GenBasBI.ttf.G_S_U_B</em>.ttx GenBasBI.ttf.G_D_E_F_.ttx GenBasBI.ttf.O_S_2f_2.ttx GenBasBI.ttf._p_r_e_p.ttx GenBasBI.ttf._h_e_a_d.ttx GenBasBI.ttf._f_p_g_m.ttx GenBasBI.ttf.G</strong>l_a_t.ttx GenBasBI.ttf._n_a_m_e.ttx GenBasBI.ttf._g_a_s_p.ttx GenBasBI.ttf._l_o_c_a.ttx GenBasBI.ttf._c_m_a_p.ttx GenBasBI.ttf.F<strong>e_a_t.ttx GenBasBI.ttf.G</strong>l_o_c.ttx GenBasI.ttf._c_v_t.ttx GenBasI.ttf._l_o_c_a.ttx GenBasI.ttf.F<strong>e_a_t.ttx GenBasI.ttf.S</strong>i_l_l.ttx GenBasI.ttf.G_S_U_B</em>.ttx GenBasI.ttf.<em>f_p_g_m.ttx GenBasI.ttf._g_l_y_f.ttx GenBasI.ttf._p_o_s_t.ttx GenBasI.ttf._h_m_t_x.ttx GenBasI.ttf.O_S_2f_2.ttx GenBasI.ttf.G<strong>l_o_c.ttx GenBasI.ttf.<em>n_a_m_e.ttx GenBasI.ttf.G_P_O_S</em>.ttx GenBasI.ttf.G</strong>l_a_t.ttx GenBasI.ttf._h_h_e_a.ttx GenBasI.ttf._p_r_e_p.ttx GenBasI.ttf.S<strong>i_l_f.ttx GenBasI.ttf.<em>m_a_x_p.ttx GenBasI.ttf._h_e_a_d.ttx GenBasI.ttf.G_D_E_F</em>.ttx GenBasI.ttf.<em>g_a_s_p.ttx GenBasI.ttf.GlyphOrder.ttx GenBasI.ttf._c_m_a_p.ttx GenBasR.ttf._p_o_s_t.ttx GenBasR.ttf._h_h_e_a.ttx GenBasR.ttf._h_e_a_d.ttx GenBasR.ttf.G_D_E_F</em>.ttx GenBasR.ttf.O_S_2f_2.ttx GenBasR.ttf.F</strong>e_a_t.ttx GenBasR.ttf._n_a_m_e.ttx GenBasR.ttf.S<strong>i_l_l.ttx GenBasR.ttf.G</strong>l_o_c.ttx GenBasR.ttf._h_m_t_x.ttx GenBasR.ttf._f_p_g_m.ttx GenBasR.ttf.G_S_U_B</em>.ttx GenBasR.ttf.GlyphOrder.ttx GenBasR.ttf._c_v_t.ttx GenBasR.ttf.G<strong>l_a_t.ttx GenBasR.ttf.<em>m_a_x_p.ttx GenBasR.ttf._p_r_e_p.ttx GenBasR.ttf._c_m_a_p.ttx GenBasR.ttf._l_o_c_a.ttx GenBasR.ttf._g_l_y_f.ttx GenBasR.ttf.G_P_O_S</em>.ttx GenBasR.ttf._g_a_s_p.ttx GenBasR.ttf.S</strong>i_l_f.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources</p>
+<h3>(2 of 6) pyfontaine</h3>
+<h3>(3 of 6) Run upstream tests</h3>
+<p>$ bakery-lint.py upstream-repo sources
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasB.ttf.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasBI.ttf.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasI.ttf.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasR.ttf.ttx &gt; fontaine.txt
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs(): OK
+WARNING: Please install <a href="https://pypi.python.org/pypi/PyICU">PyICU</a> toenable [feature], perhaps with: pip install pyicu
+end of pyfontaine process
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists(): OK
+$ bakery-lint.py upstream-ttx GenBasB.ttf.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasB.ttf.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+$ bakery-lint.py upstream-ttx GenBasBI.ttf.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasBI.ttf.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-BoldItalic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+$ bakery-lint.py upstream-ttx GenBasI.ttf.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasI.ttf.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Italic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+$ bakery-lint.py upstream-ttx GenBasR.ttf.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GenBasR.ttf.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL</p>
+<h3>(4 of 6) Convert sources to TTF</h3>
+<p>$ ttx -d /home/travis/build/fontdirectory/gentiumbasic/builds/build /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Regular.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-BoldItalic.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Italic.ttx /home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Bold.ttx
+Compiling "/home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Regular.ttx" to "/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'Feat' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'Glat' table...
+Parsing 'Gloc' table...
+Parsing 'Silf' table...
+Parsing 'Sill' table...
+Compiling "/home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-BoldItalic.ttx" to "/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'Feat' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'Glat' table...
+Parsing 'Gloc' table...
+Parsing 'Silf' table...
+Parsing 'Sill' table...
+Compiling "/home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Italic.ttx" to "/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'Feat' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'Glat' table...
+Parsing 'Gloc' table...
+Parsing 'Silf' table...
+Parsing 'Sill' table...
+Compiling "/home/travis/build/fontdirectory/gentiumbasic/builds/build/sources/GentiumBasic-Bold.ttx" to "/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'Feat' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'Glat' table...
+Parsing 'Gloc' table...
+Parsing 'Silf' table...
+Parsing 'Sill' table...</p>
+<h3>Test GentiumBasic-Regular.ttf</h3>
+<p>$ bakery-lint.py result GentiumBasic-Regular.ttf</p>
+<h3>Test GentiumBasic-BoldItalic.ttf</h3>
+<p>$ bakery-lint.py result GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK</p>
+<h3>Test GentiumBasic-Italic.ttf</h3>
+<p>$ bakery-lint.py result GentiumBasic-Italic.ttf</p>
+<h3>(5 of 6) Generate METADATA.json (genmetadata.py)</h3>
+<p>$ genmetadata.py /home/travis/build/fontdirectory/gentiumbasic/builds/build
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+{} exists</p>
+<h3>Test GentiumBasic-Bold.ttf</h3>
+<p>$ bakery-lint.py result GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+Designer's name from font is: J. Victor Gaultney and Annie Olsen
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:52: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:52: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:52: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:52: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")
+Original size: 263932\nGzip size: 102161
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+Family Name: Gentium Basic
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+PS Name: GentiumBasic-Italic
+Full Name: Gentium Basic Italic
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+Style: italic
+Weight: 400
+Filename: GentiumBasic-Italic.ttf
+Copyright: Copyright (c) SIL International, 2003-2008.
+Family Name: Gentium Basic
+PS Name: GentiumBasic-Bold
+Full Name: Gentium Basic Bold
+Style: normal
+Weight: 700
+Filename: GentiumBasic-Bold.ttf
+Copyright: Copyright (c) SIL International, 2003-2008.
+Family Name: Gentium Basic
+PS Name: GentiumBasic-BoldItalic
+Full Name: Gentium Basic Bold Italic
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+Style: italic
+Weight: 700
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+Filename: GentiumBasic-BoldItalic.ttf
+Copyright: Copyright (c) SIL International, 2003-2008.
+Family Name: Gentium Basic
+PS Name: GentiumBasic
+Full Name: Gentium Basic
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+Style: normal
+Weight: 400
+Filename: GentiumBasic-Regular.ttf
+Copyright: Copyright (c) SIL International, 2003-2008.
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK</p>
+<h3>(6 of 6) Run tests for METADATA.json</h3>
+<p>$ bakery-lint.py metadata METADATA.json
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin_ext(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_menu(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_more_than_500b(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_valid_html(): FAIL
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ bakery-dsig.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+  Ignoring 'Feat' SIL Graphite layout feature table
+  Ignoring 'Glat' Graphite glyph attribute table
+  Ignoring 'Gloc' Graphite glyph location in Glat table
+  Ignoring 'Silf' SIL Graphite rule table
+  Ignoring 'Sill' (unspecified) SIL Graphite table
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ bakery-dsig.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+  Ignoring 'Feat' SIL Graphite layout feature table
+  Ignoring 'Glat' Graphite glyph attribute table
+  Ignoring 'Gloc' Graphite glyph location in Glat table
+  Ignoring 'Silf' SIL Graphite rule table
+  Ignoring 'Sill' (unspecified) SIL Graphite table
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ bakery-dsig.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+  Ignoring 'Feat' SIL Graphite layout feature table
+  Ignoring 'Glat' Graphite glyph attribute table
+  Ignoring 'Gloc' Graphite glyph location in Glat table
+  Ignoring 'Silf' SIL Graphite rule table
+  Ignoring 'Sill' (unspecified) SIL Graphite table
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ bakery-dsig.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+  Ignoring 'Feat' SIL Graphite layout feature table
+  Ignoring 'Glat' Graphite glyph attribute table
+  Ignoring 'Gloc' Graphite glyph location in Glat table
+  Ignoring 'Silf' SIL Graphite rule table
+  Ignoring 'Sill' (unspecified) SIL Graphite table
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_daltonmaag_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontbureau_catalogue(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontscom_catalogue(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontshop_catalogue(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontsmith_catalogue(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_houseind_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_myfonts_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_veer_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_family_is_listed_in_gwf(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_atleast_latin_menu_subsets_exist(): OK
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/tests/metadata_test.py:141: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  self.assertTrue(designer in designers,
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_designer_exists_in_profiles_csv(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_items_dicts(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_no_dupes(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_has_unique_style_weight_pairs(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_license(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_no_unknown_top_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_subsets_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_top_keys_types(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_styles.CheckCanonicalStyles.test_check_canonical_styles(): ERROR
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckCanonicalWeights.test_check_canonical_weights(): ERROR
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckPostScriptNameMatchesWeight.test_postscriptname_contains_correct_weight(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFontWeightSameAsInMetadata.test_font_weight_same_as_in_metadata(): ERROR
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFullNameEqualCanonicalName.test_metadata_contains_current_font(): ERROR
+bakery_lint.tests.downstream.test_check_font_name_not_in_camelcase.CheckFontNameNotInCamelCase.test_fontname_not_in_camel_case(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_copyrighttxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_description_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_fontlogtxt_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_licensetxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_metadata_matches_nametable.CheckMetadataMatchesNameTable.test_check_metadata_matches_nametable(): ERROR
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_encodings_of_glyphs_across_family(): ERROR
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_names_of_glyphs_across_family(): ERROR
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_number_of_glyphs_across_family(): ERROR
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckItalicStyleMatchesMacStyle.test_check_italic_style_matches_names(): ERROR
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckNormalStyleMatchesMacStyle.test_check_normal_style_matches_names(): ERROR
+bakery_lint.tests.downstream.test_check_metadata_fields.CheckMetadataFields.test_check_metadata_fields(): OK
+bakery_lint.tests.downstream.test_check_familyname_matches_fontnames.CheckFamilyNameMatchesFontNames.test_check_familyname_matches_fontnames(): OK
+bakery_lint.tests.downstream.test_check_files_menu_agreements.CheckFontsMenuAgreements.test_menu_file_agreement(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_filenames.CheckCanonicalFilenames.test_check_canonical_filenames(): FAIL
+bakery_lint.tests.downstream.test_check_subsets_exists.CheckSubsetsExist.test_check_subsets_exists(): FAIL
+bakery_lint.tests.downstream.test_check_menu_contains_proper_glyphs.CheckMenuSubsetContainsProperGlyphs.test_check_menu_contains_proper_glyphs(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_font_name_matches_family(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family_values_are_all_the_same(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_filename_matches_postScriptName(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_font_have_regular(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fonts_fields_have_fontname(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_is_equal_to_internal_font_fullname(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_matches_postScriptName(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_postScriptName_matches_ttf_fontname(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_400(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_normal(): FAIL
+bakery_lint.tests.downstream.test_check_monospace_agreements.CheckMonospaceAgreement.test_check_monospace_agreement(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_contains_correct_rfn(): FAIL
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_is_consistent_across_family(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_matches_pattern(): FAIL
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_metadata_copyright_size(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): FAIL
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): FAIL
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+Parameter              GentiumBasic-Italic.ttf    GentiumBasic-Bold.ttf    GentiumBasic-BoldItalic.ttf    GentiumBasic-Regular.ttf  <br />
+ymax                   2168                       2207                     2196                           2169                      <br />
+hhea.ascent            2207                       2207                     2207                           2207                      <br />
+OS/2.sTypoAscender     2207                       2207                     2207                           2207                      <br />
+OS/2.usWinAscent       2207                       2207                     2207                           2207                      <br />
+ymin                   -725                       -733                     -733                           -725                      <br />
+hhea.descent           -733                       -733                     -733                           -733                      <br />
+OS/2.sTypoDescender    -733                       -733                     -733                           -733                      <br />
+OS/2.usWinDescent      733                        733                      733                            733                       <br />
+hhea.lineGap           0                          0                        0                              0                         <br />
+OS/2.sTypoLineGap      0                          0                        0                              0                         <br />
+hhea total             2940                       2940                     2940                           2940                      <br />
+typo total             2940                       2940                     2940                           2940                      <br />
+win total              2940                       2940                     2940                           2940                      <br />
+UPM:Heights            2048:2893                  2048:2940                2048:2929                      2048:2894                 <br />
+UPM:Heights %          141 %                      143 %                    143 %                          141 %                       </p>
+<p>Parameter              GentiumBasic-Italic.ttf    GentiumBasic-Bold.ttf    GentiumBasic-BoldItalic.ttf    GentiumBasic-Regular.ttf  <br />
+ymax                   2168                       2207                     2196                           2169                      <br />
+hhea.ascent            2207                       2207                     2207                           2207                      <br />
+OS/2.sTypoAscender     2207                       2207                     2207                           2207                      <br />
+OS/2.usWinAscent       2207                       2207                     2207                           2207                      <br />
+ymin                   -725                       -733                     -733                           -725                      <br />
+hhea.descent           -733                       -733                     -733                           -733                      <br />
+OS/2.sTypoDescender    -733                       -733                     -733                           -733                      <br />
+OS/2.usWinDescent      733                        733                      733                            733                       <br />
+hhea.lineGap           0                          0                        0                              0                         <br />
+OS/2.sTypoLineGap      0                          0                        0                              0                         <br />
+hhea total             2940                       2940                     2940                           2940                      <br />
+typo total             2940                       2940                     2940                           2940                      <br />
+win total              2940                       2940                     2940                           2940                      <br />
+UPM:Heights            2048:2893                  2048:2940                2048:2929                      2048:2894                 <br />
+UPM:Heights %          141 %                      143 %                    143 %                          141 %                       </p>
+<p>Parameter              GentiumBasic-Italic.ttf    GentiumBasic-Bold.ttf    GentiumBasic-BoldItalic.ttf    GentiumBasic-Regular.ttf  <br />
+ymax                   2168                       2207                     2196                           2169                      <br />
+hhea.ascent            2207                       2207                     2207                           2207                      <br />
+OS/2.sTypoAscender     2207                       2207                     2207                           2207                      <br />
+OS/2.usWinAscent       2207                       2207                     2207                           2207                      <br />
+ymin                   -725                       -733                     -733                           -725                      <br />
+hhea.descent           -733                       -733                     -733                           -733                      <br />
+OS/2.sTypoDescender    -733                       -733                     -733                           -733                      <br />
+OS/2.usWinDescent      733                        733                      733                            733                       <br />
+hhea.lineGap           0                          0                        0                              0                         <br />
+OS/2.sTypoLineGap      0                          0                        0                              0                         <br />
+hhea total             2940                       2940                     2940                           2940                      <br />
+typo total             2940                       2940                     2940                           2940                      <br />
+win total              2940                       2940                     2940                           2940                      <br />
+UPM:Heights            2048:2893                  2048:2940                2048:2929                      2048:2894                 <br />
+UPM:Heights %          141 %                      143 %                    143 %                          141 %                       </p>
+<p>Parameter              GentiumBasic-Italic.ttf    GentiumBasic-Bold.ttf    GentiumBasic-BoldItalic.ttf    GentiumBasic-Regular.ttf  <br />
+ymax                   2168                       2207                     2196                           2169                      <br />
+hhea.ascent            2207                       2207                     2207                           2207                      <br />
+OS/2.sTypoAscender     2207                       2207                     2207                           2207                      <br />
+OS/2.usWinAscent       2207                       2207                     2207                           2207                      <br />
+ymin                   -725                       -733                     -733                           -725                      <br />
+hhea.descent           -733                       -733                     -733                           -733                      <br />
+OS/2.sTypoDescender    -733                       -733                     -733                           -733                      <br />
+OS/2.usWinDescent      733                        733                      733                            733                       <br />
+hhea.lineGap           0                          0                        0                              0                         <br />
+OS/2.sTypoLineGap      0                          0                        0                              0                         <br />
+hhea total             2940                       2940                     2940                           2940                      <br />
+typo total             2940                       2940                     2940                           2940                      <br />
+win total              2940                       2940                     2940                           2940                      <br />
+UPM:Heights            2048:2893                  2048:2940                2048:2929                      2048:2894                 <br />
+UPM:Heights %          141 %                      143 %                    143 %                          141 %                       </p>
+<p>bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK</p>
+<h3>Optimize TTF GentiumBasic-BoldItalic.ttf</h3>
+<h3>Optimize TTF GentiumBasic-Regular.ttf</h3>
+<p>bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:113: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:113: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")</p>
+<h3>Optimize TTF GentiumBasic-Italic.ttf</h3>
+<p>/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:113: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")
+$ ls -l 'GentiumBasic-Regular.ttf'* # look at the size savings of that subset process
+GentiumBasic-Regular.ttf.opt: 158532 bytes
+GentiumBasic-Regular.ttf: 271692 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf.opt /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf</p>
+<h3>Autohint TTFs (ttfautohint) GentiumBasic-Regular.ttf</h3>
+<p>$ ls -l 'GentiumBasic-BoldItalic.ttf'* # look at the size savings of that subset process
+GentiumBasic-BoldItalic.ttf.opt: 138772 bytes
+GentiumBasic-BoldItalic.ttf: 252140 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf.opt /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf</p>
+<h3>Autohint TTFs (ttfautohint) GentiumBasic-BoldItalic.ttf</h3>
+<p>$ ls -l /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf: 158532 bytes
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.autohint.ttf: 120132 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.autohint.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf</p>
+<h3>Subset TTFs (pyftsubset) GentiumBasic-Regular.ttf</h3>
+<p>$ ls -l /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf: 138772 bytes
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.autohint.ttf: 129084 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.autohint.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf</p>
+<h3>Subset TTFs (pyftsubset) GentiumBasic-BoldItalic.ttf</h3>
+<p>$ ls -l 'GentiumBasic-Italic.ttf'* # look at the size savings of that subset process
+GentiumBasic-Italic.ttf.opt: 152128 bytes
+GentiumBasic-Italic.ttf: 265472 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf.opt /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf</p>
+<h3>Autohint TTFs (ttfautohint) GentiumBasic-Italic.ttf</h3>
+<p>$ ls -l /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf: 152128 bytes
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.autohint.ttf: 127192 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.autohint.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf</p>
+<h3>Subset TTFs (pyftsubset) GentiumBasic-Italic.ttf</h3>
+<p>Generate GentiumBasic-Regular.latin
+Generate GentiumBasic-BoldItalic.latin
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.fix /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+Generate GentiumBasic-BoldItalic.menu
+strippedname:/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-BoldItalic.ttf
+Generate GentiumBasic-Regular.menu
+strippedname:/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Regular.ttf
+Generate GentiumBasic-Italic.latin</p>
+<h3>Optimize TTF GentiumBasic-Bold.ttf</h3>
+<p>Generate GentiumBasic-Italic.menu
+strippedname:/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Italic.ttf
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/otTables.py:113: UserWarning: GSUB/GPOS Coverage is not sorted by glyph ids.
+  warnings.warn("GSUB/GPOS Coverage is not sorted by glyph ids.")
+$ ls -l 'GentiumBasic-Bold.ttf'* # look at the size savings of that subset process
+GentiumBasic-Bold.ttf.opt: 160704 bytes
+GentiumBasic-Bold.ttf: 273916 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf.opt /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf</p>
+<h3>Autohint TTFs (ttfautohint) GentiumBasic-Bold.ttf</h3>
+<p>$ ls -l /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf: 160704 bytes
+/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.autohint.ttf: 123876 bytes
+$ mv /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.autohint.ttf /home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf</p>
+<h3>Subset TTFs (pyftsubset) GentiumBasic-Bold.ttf</h3>
+<p>Generate GentiumBasic-Bold.latin
+Generate GentiumBasic-Bold.menu
+strippedname:/home/travis/build/fontdirectory/gentiumbasic/builds/build/GentiumBasic-Bold.ttf
+{
+  "name": "Gentium Basic", 
+  "designer": "Victor Gaultney", 
+  "license": "OFL", 
+  "visibility": "External", 
+  "category": "Serif", 
+  "size": 102574, 
+  "fonts": [
+    {
+      "name": "Gentium Basic", 
+      "postScriptName": "GentiumBasic-Italic", 
+      "fullName": "Gentium Basic Italic", 
+      "style": "italic", 
+      "weight": 400, 
+      "filename": "GentiumBasic-Italic.ttf", 
+      "copyright": "Copyright (c) SIL International, 2003-2008."
+    }, 
+    {
+      "name": "Gentium Basic", 
+      "postScriptName": "GentiumBasic-Bold", 
+      "fullName": "Gentium Basic Bold", 
+      "style": "normal", 
+      "weight": 700, 
+      "filename": "GentiumBasic-Bold.ttf", 
+      "copyright": "Copyright (c) SIL International, 2003-2008."
+    }, 
+    {
+      "name": "Gentium Basic", 
+      "postScriptName": "GentiumBasic-BoldItalic", 
+      "fullName": "Gentium Basic Bold Italic", 
+      "style": "italic", 
+      "weight": 700, 
+      "filename": "GentiumBasic-BoldItalic.ttf", 
+      "copyright": "Copyright (c) SIL International, 2003-2008."
+    }, 
+    {
+      "name": "Gentium Basic", 
+      "postScriptName": "GentiumBasic", 
+      "fullName": "Gentium Basic", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "GentiumBasic-Regular.ttf", 
+      "copyright": "Copyright (c) SIL International, 2003-2008."
+    }
+  ], 
+  "subsets": [
+    "latin"
+  ], 
+  "dateAdded": "2011-07-20"
+}</p></pre>
+</div>
+<!-- Footer -->
+
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <ul class="footer-links">
+        <li><a href='https://github.com/googlefonts/fontbakery-cli/edit/master/bakery_cli/report/templates/buildlog.html'>Edit this page's template</a></li>
+        <li><a href='https://github.com/googlefonts/fontbakery-cli/'>Made with Font Bakery</a> (<a href='http://www.gnu.org/philosophy/free-sw.html'>libre software</a> available under the terms of the <a href='https://github.com/googlefonts/fontbakery-cli/blob/master/LICENSE.txt'>Apache 2.0 license</a>.)</li>
+        <li>Please <a href='https://github.com/googlefonts/fontbakery-cli/issues/new'>report bugs</a>, suggest features, and contribute on <a href='https://github.com/googlefonts/fontbakery-cli/'>GitHub <i class='icon-github'></i></a></li>
+        
+        <li>7ff3f419f4e12980118de51d6ab87e7007460ead, Fri Sep 19 10:52:01 2014 +0300</li>
+        
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
